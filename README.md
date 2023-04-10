@@ -8,7 +8,7 @@ SwichBot に登録されているデバイスを用意されているAPIを実�
 ## 利用手順
 
 1. pythonスクリプトをダウンロードし、同階層に 'switchbot_access_token' というファイル名を作成する。
-2. 利用するSwitchBotのアクセストークンを記載する。取得方法は[こちら](https://support.switch-bot.com/hc/ja/articles/12822710195351-%E3%83%88%E3%83%BC%E3%82%AF%E3%83%B3%E3%81%AE%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95)を参照。
+2. 利用するSwitchBotのアクセストークンを 'switchbot_access_token' に記載する。取得方法は[こちら](https://support.switch-bot.com/hc/ja/articles/12822710195351-%E3%83%88%E3%83%BC%E3%82%AF%E3%83%B3%E3%81%AE%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95)を参照。
 3. SwitchBot に登録されている操作の対象デバイスのデバイスIDを取得する。デバイスIDの確認方法は以下のcurlを実行する。
 
 curlコマンド
@@ -42,7 +42,7 @@ curl "https://api.switch-bot.com/v1.0/devices" -H "Authorization: <アクセス�
     ・
  ```
 
-4. setting.ini の USER セクションのdeviceに設定する。
+4. setting.ini の USER セクションのdeviceにデバイスIDを設定する。
 
 ## 利用方法
 
